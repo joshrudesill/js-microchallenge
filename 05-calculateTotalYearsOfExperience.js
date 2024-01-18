@@ -5,18 +5,22 @@
 
 // Examples:
 
-// let employees = [
-//   { name: "Tony", yearsOfExperience: 10 }, 
-//   { name: "Carla", yearsOfExperience: 4 }
-// ]
+let employees = [
+  { name: "Tony", yearsOfExperience: 10 },
+  { name: "Carla", yearsOfExperience: 4 },
+];
 //
 // calculateTotalYearsOfExperience(employees)
 //     should evaluate to 14
 
-
-function calculateTotalYearsOfExperience() {
-
+function calculateTotalYearsOfExperience(employees) {
+  let years = 0;
+  for (let employee of employees) {
+    years += employee.yearsOfExperience;
+  }
+  return years;
 }
+console.log(calculateTotalYearsOfExperience(employees));
 
 try {
   module.exports = calculateTotalYearsOfExperience;

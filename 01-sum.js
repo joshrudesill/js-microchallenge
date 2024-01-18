@@ -3,16 +3,17 @@
 
 // Examples:
 
-// sum(2, 3) 
+// sum(2, 3)
 //     should evaluate to 5
 
 // sum(2, 7)
 //     should evaluate to 9
 
-
-function sum() {
-
+function sum(n1, n2) {
+  return n1 + n2;
 }
+console.log(sum(2, 3));
+console.log(sum(2, 7));
 
 try {
   module.exports = sum;

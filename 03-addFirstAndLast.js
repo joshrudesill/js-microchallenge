@@ -10,11 +10,11 @@
 // addFirstAndLast([-9, 12, 33, 29])
 //     should evaluate to 20
 
-
-function addFirstAndLast() {
-
+function addFirstAndLast(array) {
+  return array[0] + array.at(-1);
 }
-
+console.log(addFirstAndLast([3, 2, 6]));
+console.log(addFirstAndLast([-9, 12, 33, 29]));
 try {
   module.exports = addFirstAndLast;
 } catch (err) {

@@ -4,7 +4,6 @@
 // the array's values starting at the index position of the
 // number that is passed into the function.
 
-
 // Examples:
 
 // smooshSomeStrings(["ASDF", "BLAH", "Oh!", "Hi", "There!"], 3)
@@ -13,10 +12,13 @@
 // smooshSomeStrings(["Turtle", "dolphin", "Boop", "Beep", "Boop"], 1)
 //     should evaluate to "dolphinBoopBeepBoop"
 
-
-function smooshSomeStrings() {
-  
+function smooshSomeStrings(array, index) {
+  return array.splice(index).join("");
 }
+console.log(smooshSomeStrings(["ASDF", "BLAH", "Oh!", "Hi", "There!"], 3));
+console.log(
+  smooshSomeStrings(["Turtle", "dolphin", "Boop", "Beep", "Boop"], 1)
+);
 
 try {
   module.exports = smooshSomeStrings;

@@ -12,7 +12,7 @@
 // Examples:
 
 // compareTwoNumbers(3, 2)
-//     should evaluate to "The first number was bigger!" 
+//     should evaluate to "The first number was bigger!"
 
 // compareTwoNumbers(2, 7)
 //     should evaluate to "The second number was bigger!"
@@ -20,10 +20,18 @@
 // compareTwoNumbers(7, 7);
 //     should evaluate to "The numbers are the same!"
 
-
-function compareTwoNumbers() {
-
+function compareTwoNumbers(n1, n2) {
+  if (n1 > n2) {
+    return "The first number was bigger!";
+  }
+  if (n1 < n2) {
+    return "The second number was bigger!";
+  }
+  return "The numbers are the same!";
 }
+console.log(compareTwoNumbers(3, 2));
+console.log(compareTwoNumbers(2, 7));
+console.log(compareTwoNumbers(7, 7));
 
 try {
   module.exports = compareTwoNumbers;
